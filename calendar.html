@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Victory Christian Center</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
+  </head>
+  <body>
+ 
+ <!-- header logo-->
+ <div class="row">
+   
+      <div class="col-sm-11" id="header">
+ <h1>Where Good Things Are Happening!</h1>
+</div>
+
+    </div>
+          
+
+<!-- navbar for smaller screens -->
+<div class="row">
+<div class="navbar navbar-default visible-xs" role="navigation">
+	<div class="navbar-header">
+	   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar-collapse-1">
+		<span class="sr-only">Navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	   </button>
+	</div>
+	<div class="collapse navbar-collapse" id="my-navbar-collapse-1">
+	    <ul class="nav navbar-nav">
+		<li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+	           <a class="dropdown-toggle" data-toggle="dropdown" href="mission.html">Mission Statement<span class="caret"></span></a>
+		     <ul class="dropdown-menu">
+ 		       <li><a href="mission.html">Mission Statement</a></li>
+     		       <li><a href="vision.html">Vision Statement</a></li>
+                     </ul>
+                 </li>
+	         <li><a href="service.html">Service Times</a></li>
+	         <li><a href="calendar.html">Calendar Events</a></li>
+	         <li><a href="hall.html">Hall Rental</a></li>
+             <li><a href="contact.html">Contact Us</a></li>
+		         
+	              </ul>
+	</div>
+</div>
+</div>
+
+
+<!-- navbar for laptops -->
+<div class="row hidden-xs">
+	<ul class="col-sm-10 nav nav-pills nav-justified nav-fixed">
+          <li><a href="home.html">Home</a></li>
+          <li class="dropdown">
+	    <a class="dropdown-toggle" data-toggle="dropdown" href="mission.html">Mission Statement<span class="caret"></span></a>
+		<ul class="dropdown-menu">
+ 		   <li><a href="mission.html">Mission Statement</a></li>
+     		   <li><a href="vision.html">Vision Statement</a></li>
+                </ul>
+            </li>
+	  <li><a href="service.html">Service Times</a></li>
+	  <li><a href="calendar.html">Calendar Events</a></li>
+	  <li><a href="hall.html">Hall Rental</a></li>
+	  <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+</div>
+
+<div class="row">
+   <div class="col-sm-8" id="calendar">
+       <h1 id="cTitle">Calendar Events</h1>
+       <br>
+       <p id="timeDate">Today's Date:</p>
+       <p id="tDate"></p>
+            <script>
+                var d = new Date();
+                document.getElementById("tDate").innerHTML = d.toDateString();
+            </script>
+       <br><br>
+       <p id="eInfo">Below is the events that take place at the church. All are welcome to come join the fun and learn more about God and his word. 
+                     If you have any questions or concerns, feel free to contact us on our <a href="contact.html" style="text-decoration: underline;">contact</a> 
+                     page.</p>
+       <br><br>
+       </div>
+</div>
+    
+  <div class="row">
+     <div class="col-sm-8" id="tableDiv">
+       <table id="eTable" class="table-responsive">
+          <thead>
+              <tr>
+               <th id="tHead">Date</th>
+               <th id="tHead">Event</th>
+               <th id="tHead">Time</th>
+              </tr>
+          </thead>
+           <tbody>
+               <tr>
+                 <td>July 3<sup>rd</sup></td>
+                 <td>Church Picnic</td>
+                 <td>1:00pm est</td>
+                </tr>
+               <tr>
+                 <td>July 3<sup>rd</sup></td>
+                 <td>Song Fest</td>
+                 <td>3:30pm est</td>
+               </tr>
+               <tr>
+                 <td>July 22<sup>nd</sup></td>
+                 <td>Senior Adult Ministries</td>
+                 <td>5:00pm est</td>
+               </tr>
+               <tr>
+                 <td>July 24-27<sup>th</sup></td>
+                 <td>Vacation Bible School</td>
+                 <td>7-8:30pm est</td>
+               </tr>
+               <tr style="border-bottom: 1px dashed black;">
+                 <td>July 26<sup>th</sup></td>
+                 <td>Men of Faith/Women of Faith Meetings</td>
+                 <td>6:30pm est</td>
+               </tr>
+               <tr style="padding-top: 2px;">
+                 <td>Augest 23<sup>rd</sup></td>
+                 <td>Men of Faith/Women of Faith Meetings</td>
+                 <td>6:30pm est</td>
+               </tr>
+               <tr style="border-bottom: 1px dashed black;">
+                 <td>Augest 26<sup>th</sup></td>
+                 <td>Senior Adult Ministries</td>
+                 <td>5:00pm est</td>
+               </tr>
+               <tr style="padding-top: 2px;">
+                 <td>September 23<sup>rd</sup></td>
+                 <td>Senior Adult Ministries</td>
+                 <td>5:00pm est</td>
+               </tr>
+               <tr>
+                 <td>September 27<sup>th</sup></td>
+                 <td>Men of Faith/ Women of Faith Meetings</td>
+                 <td>6:30pm est</td>
+               </tr>
+           </tbody>
+       </table>
+    </div>
+</div>
+   
+
+
+<!-- footer -->
+
+<div class="col-sm-11 footer">
+   
+	<strong>1092</strong> W. Church St. &nbsp Newark Ohio 43055 ~ Phone: (740) 344-8894
+   <p>
+	Copyright &copy 2016  Victory Christian Center ~ All rights reserved ~ Publisher: Pamela Yoak
+   </p>
+   
+</div>
+
+
+
+
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
